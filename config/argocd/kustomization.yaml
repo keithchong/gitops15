@@ -3,6 +3,8 @@ resources:
 - cicd-app.yaml
 - dev-app-taxi-app.yaml
 - dev-env-app.yaml
+- production-united-states-east-app-taxi2-app.yaml
+- production-united-states-east-env-app.yaml
 - production-united-states-west-app-taxi-app.yaml
 - production-united-states-west-env-app.yaml
 - stage-env-app.yaml

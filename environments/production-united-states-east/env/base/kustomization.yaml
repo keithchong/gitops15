@@ -1,0 +1,3 @@
+resources:
+- production-united-states-east-environment.yaml
+- production-united-states-east-rolebinding.yaml
