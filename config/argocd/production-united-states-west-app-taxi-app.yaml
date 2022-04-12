@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/name: app-taxi
+  name: production-united-states-west-app-taxi
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: production-united-states-west
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: environments/production-united-states-west/apps/app-taxi/overlays
+    repoURL: https://github.com/keithchong/gitops15.git
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+status:
+  health: {}
+  summary: {}
+  sync:
+    comparedTo:
+      destination: {}
+      source:
+        repoURL: ""
+    status: ""
