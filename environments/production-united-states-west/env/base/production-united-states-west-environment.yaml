@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Namespace
 metadata:
   annotations:
-    app.openshift.io/vcs-uri: https://github.com/keithchong/gitops15.git?ref=HEAD
+    app.openshift.io/vcs-uri: https://github.com/keithchong/gitops15.git?ref=main
   creationTimestamp: null
   labels:
     argocd.argoproj.io/managed-by: openshift-gitops
