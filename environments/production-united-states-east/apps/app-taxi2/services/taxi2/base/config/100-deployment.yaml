@@ -8,7 +8,7 @@ metadata:
   name: taxi2
   namespace: production-united-states-east
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app.kubernetes.io/name: taxi2
